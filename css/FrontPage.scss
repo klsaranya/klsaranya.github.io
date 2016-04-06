@@ -1,0 +1,138 @@
+.FrontPage{
+  padding: 0;
+  margin-top: 80px;
+  height: 550px;
+  background: #ccc url('http://d196kgo02410lt.cloudfront.net/Dekorate-Business/1-ID-9d59754b-66e9-4cd6-c2bf-877ca51e22cc-min.jpg') no-repeat 100% 100%;
+  background-size: cover;
+  position: relative;
+  .submitMessage{
+    margin: 20px;
+    color: white;
+    font-family: 'sans-book';
+  }
+  &-form{
+    &-wrapper{
+      position: absolute;
+      height: 250px;
+      width: 60%;
+      top: 150px;
+      left: 20%;
+      @media all and (min-width: 768px) and (max-width: 992px) {
+        width: 70%;
+        left: 15%;
+      }
+    }
+    &-item{
+      height: 44px;
+      width: 24%;
+      margin: 0 0 0 2px;
+      display: inline-block;
+      padding-left: 11px;
+      border: none;
+      background-color: white;
+      font-size: 1em;
+      border-radius: 1px;
+      font-family: 'sans-book';
+      box-sizing: border-box;
+      outline: none;
+      &.dropdown {
+        padding-left: 11px;
+        appearance: none;
+        -webkit-appearance: none;
+      }
+    }
+    &-submit{
+      margin: 0 0 0 4px;
+      height: 44px;
+      -webkit-appearance: none;
+      font-family: 'sans-semibold';
+      color: #fff;
+      background-color: #ffb549;
+      border: 1px solid #ffb549;
+      font-size: 1em;
+      box-sizing: border-box;
+      width: 24%;
+      display: inline-block;
+      border-radius: 1px;
+      outline: none;
+    }
+  }
+  &-title{
+    color: rgb(255, 255, 255);
+    font-family: 'sans-medium';
+    font-size: 64px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-shadow: rgba(0, 0, 0, 0.298039) 1px 1px 1px;
+  }
+  &-subtitle{
+    color: rgb(255, 255, 255);
+    font-family: 'sans-book';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 25px;
+    text-decoration: none;
+  }
+  &-down{
+    transform: rotate(90deg);
+    position: absolute;
+    left: 48.5%;
+    bottom: 30px;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 992px) {
+  .FrontPage{
+    &-form{
+      &-wrapper{
+        width: 70%;
+        left: 15%;
+      }
+    }
+    &-title{
+      font-size: 54px;
+    }
+    &-subtitle{
+      font-size: 14px;
+    }
+  }
+}
+@media all and (max-width: 768px) {
+  .FrontPage{
+    &-form{
+      &-wrapper{
+        width: 90%;
+        left: 5%;
+      }
+      &-item{
+        width: 30%;
+      }
+      &-submit{
+        width:35%;
+        margin-top: 2px;
+      }
+    }
+  }
+}
+@media all and (max-width: 480px) {
+  .FrontPage{
+    &-form{
+      &-wrapper{
+        top: 75px;
+      }
+      &-submit{
+        width:35%;
+        margin-top: 5px;
+      }
+      &-item{
+        width: 30%;
+      }
+    }
+    &-title{
+      font-size: 54px;
+    }
+    &-subtitle{
+      font-size: 14px;
+    }
+  }
+}

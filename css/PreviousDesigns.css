@@ -1,0 +1,91 @@
+.PreviousDesigns {
+  height: 550px; }
+  .PreviousDesigns-row {
+    height: 100%;
+    margin: 0; }
+  .PreviousDesigns-navigations {
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center; }
+    .PreviousDesigns-navigations-button {
+      background-color: transparent;
+      outline: none;
+      border: none; }
+  .PreviousDesigns-designWrapper {
+    height: 100%;
+    padding: 80px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .PreviousDesigns-designWrapper-image {
+      width: 30%;
+      height: 48%;
+      margin-left: 1%;
+      object-fit: cover;
+      background-color: #ccc;
+      cursor: pointer; }
+  .PreviousDesigns-buttonIcon {
+    cursor: pointer; }
+  .PreviousDesigns .Modal {
+    display: none;
+    width: 80%;
+    left: 10%;
+    height: 90%;
+    top: 5%; }
+    .PreviousDesigns .Modal .fullscreen-button {
+      position: fixed;
+      top: 48%;
+      border: none;
+      outline: none;
+      z-index: 1000;
+      background-color: white; }
+      .PreviousDesigns .Modal .fullscreen-button.left {
+        left: 2%; }
+      .PreviousDesigns .Modal .fullscreen-button.right {
+        right: 2%; }
+    .PreviousDesigns .Modal .fullscreen-image {
+      position: fixed;
+      max-width: 75%;
+      max-height: 90%;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: white;
+      margin: auto;
+      z-index: 1000; }
+    .PreviousDesigns .Modal .mask {
+      position: fixed;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+      z-index: 900;
+      background-color: rgba(0, 0, 0, 0.7); }
+      .PreviousDesigns .Modal .mask .cross-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        fill: white !important;
+        height: 20px !important;
+        width: 20px !important;
+        cursor: pointer; }
+
+@media all and (max-width: 768px) {
+  .PreviousDesigns {
+    height: 300px; }
+    .PreviousDesigns-xsWrapper {
+      height: 100%;
+      margin: 0; }
+    .PreviousDesigns-designWrapper {
+      padding: 20px 0; }
+      .PreviousDesigns-designWrapper .singleDesign {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: contain;
+        background-color: white; } }
+
+/*# sourceMappingURL=PreviousDesigns.css.map */
